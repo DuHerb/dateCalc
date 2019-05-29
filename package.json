@@ -1,5 +1,5 @@
 {
-  "name": "testRig",
+  "name": "dateCalculator",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -42,14 +42,5 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DuHerb/testRig.git"
-  },
-  "bugs": {
-    "url": "https://github.com/DuHerb/testRig/issues"
-  },
-  "homepage": "https://github.com/DuHerb/testRig#readme",
-  "description": ""
+  }
 }
