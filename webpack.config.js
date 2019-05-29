@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -7,7 +7,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: './src/main.js',
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(process.cwd(), 'dist')
   },
   devtool: 'eval-source-map',
@@ -18,7 +18,7 @@ module.exports = {
     new UglifyJsPlugin({sourceMap: true}),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Test Rig',
+      title: 'Date Calculator',
       template: './src/index.html',
       inject: 'body'
     })
